@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class LoreService: ObservableObject {
-    private let baseURL = "http://100.75.161.47:3001"
+    private let baseURL = "http://YOUR_SERVER_IP:3001" // Replace YOUR_SERVER_IP with your actual server IP
     
     struct LoreResponse: Codable {
         let lore: String

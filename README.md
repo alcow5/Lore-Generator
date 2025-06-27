@@ -28,18 +28,48 @@ Lore Generator is an iOS app that uses computer vision and AI to create fantasy-
 - **JSON response parsing** for lore text
 - **Graceful error handling** with fallback mock responses
 
-### API Specification
-```
-Endpoint: http://100.75.161.47:3001/generate-lore
-Method: POST
-Content-Type: multipart/form-data
-Form Field: file (image)
+## 🔄 Backend Workflow
 
-Response: 
+The Lore Generator API is a lightweight proxy service that orchestrates AI-powered lore generation through a multi-step process:
+
+### 1. 📸 Image Upload (Mobile App)
+The iOS app sends a multipart/form-data POST request containing a JPEG image to:
+```
+http://YOUR_SERVER_IP:3001/generate-lore
+```
+
+### 2. 🔍 Image Captioning (LLaVA)
+The proxy receives the image and forwards it to a locally hosted LLaVA server:
+```
+http://YOUR_SERVER_IP:11434/api/generate
+```
+- Image is converted to base64 format
+- Sent with prompt: *"Describe this image in vivid, creative detail."*
+- LLaVA responds with a detailed caption
+
+### 3. ✨ Lore Generation (LLM)
+The caption is then processed through a fantasy lore prompt:
+```
+"Generate a fantasy item lore based on this description: [caption]"
+```
+- Produces stylized fantasy-style stories and item descriptions
+- Creates mystical backstories for ordinary objects
+
+### 4. 📱 Response (Back to App)
+The final lore is returned to the iOS app as JSON:
+```json
 {
-  "lore": "In the mystical realm of ancient wisdom..."
+  "lore": "In the heart of the Elderwood Forest, this ancient artifact..."
 }
 ```
+
+## 🛠️ Backend Technologies
+
+- **Backend Framework**: FastAPI (Python)
+- **Image Captioning**: LLaVA (Locally hosted vision-language model)
+- **Lore Generation**: LLM (Qwen-1.5, LLaMA, or other GGUF-compatible models)
+- **Networking**: URLSession in Swift with multipart/form-data
+- **Image Processing**: Base64 encoding for API communication
 
 ## 🛠️ Technical Stack
 
@@ -79,22 +109,77 @@ LoreObject {
 
 ### Setup
 1. Clone the repository
-2. Open `Lore Generator.xcodeproj` in Xcode
-3. Configure your target device
-4. Build and run!
+2. **Configure Server IP**: Replace `YOUR_SERVER_IP` in these files with your actual server IP:
+   - `Lore Generator/LoreService.swift` (line 12)
+   - `Lore Generator/Lore-Generator-Info.plist` (in NSExceptionDomains)
+3. Open `Lore Generator.xcodeproj` in Xcode
+4. Configure your target device
+5. Build and run!
 
-### Server Setup (Optional)
-For full AI functionality, set up the LLaVA backend:
-1. Deploy Node.js proxy server at `100.75.161.47:3001`
-2. Configure LLaVA model endpoint at `localhost:11434`
-3. Update IP address in `LoreService.swift` if needed
+### Backend Server Setup
+For full AI functionality, deploy the complete backend stack:
+
+#### 1. FastAPI Proxy Server
+```bash
+# Deploy FastAPI proxy server at YOUR_SERVER_IP:3001
+# Handles image upload and orchestrates AI pipeline
+```
+
+#### 2. LLaVA Vision Model
+```bash
+# Configure LLaVA model endpoint at YOUR_SERVER_IP:11434
+# Provides image captioning capabilities
+```
+
+#### 3. Language Model (LLM)
+```bash
+# Set up GGUF-compatible model (Qwen-1.5, LLaMA, etc.)
+# Generates fantasy lore from captions
+```
+
+#### 4. Configuration
+- Replace `YOUR_SERVER_IP` with your actual server IP address in both:
+  - `LoreService.swift` (iOS app)
+  - `Info.plist` (ATS configuration)
+- Ensure all services are accessible on local network
+- Verify port 3001 (API) and 11434 (LLaVA) are open
 
 ## 🔒 Privacy & Security
 
+### iOS Permissions
 - **Camera Permission**: Required for photo capture
 - **Photo Library Permission**: Required for image selection  
 - **No Data Collection**: All processing happens locally or on your specified server
-- **App Transport Security**: Configured for local development server access
+
+### Network Security
+The API uses HTTP (not HTTPS) for local network communication. iOS requires explicit configuration to allow HTTP traffic:
+
+#### App Transport Security (ATS) Configuration
+Required in `Info.plist` to enable HTTP connections to local server:
+
+```xml
+<key>NSAppTransportSecurity</key>
+<dict>
+  <key>NSExceptionDomains</key>
+  <dict>
+    <key>YOUR_SERVER_IP</key>
+    <dict>
+      <key>NSExceptionAllowsInsecureHTTPLoads</key>
+      <true/>
+      <key>NSIncludesSubdomains</key>
+      <true/>
+      <key>NSExceptionRequiresForwardSecrecy</key>
+      <false/>
+    </dict>
+  </dict>
+</dict>
+```
+
+#### Security Notes
+- ⚠️ **HTTP Only**: Suitable for local network development
+- 🏠 **Local Network**: All communication stays within your network
+- 🔒 **No External Data**: Images and lore remain on your devices/servers
+- 🛡️ **Privacy-First**: No telemetry or data collection
 
 ## 🎨 Design Philosophy
 
