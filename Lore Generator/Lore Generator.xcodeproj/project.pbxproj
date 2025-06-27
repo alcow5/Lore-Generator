@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		FA1347BA2E0E5E4A00956E98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA13479F2E0E5E4700956E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA1347A62E0E5E4700956E98;
+			remoteInfo = "Lore Generator";
+		};
+		FA1347C42E0E5E4A00956E98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA13479F2E0E5E4700956E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA1347A62E0E5E4700956E98;
+			remoteInfo = "Lore Generator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA1347A72E0E5E4700956E98 /* Lore Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lore Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA1347B92E0E5E4A00956E98 /* Lore GeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lore GeneratorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA1347C32E0E5E4A00956E98 /* Lore GeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lore GeneratorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		FA1347A92E0E5E4700956E98 /* Lore Generator */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Lore Generator";
+			sourceTree = "<group>";
+		};
+		FA1347BC2E0E5E4A00956E98 /* Lore GeneratorTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Lore GeneratorTests";
+			sourceTree = "<group>";
+		};
+		FA1347C62E0E5E4A00956E98 /* Lore GeneratorUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Lore GeneratorUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA1347A42E0E5E4700956E98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA1347B62E0E5E4A00956E98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA1347C02E0E5E4A00956E98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA13479E2E0E5E4700956E98 = {
+			isa = PBXGroup;
+			children = (
+				FA1347A92E0E5E4700956E98 /* Lore Generator */,
+				FA1347BC2E0E5E4A00956E98 /* Lore GeneratorTests */,
+				FA1347C62E0E5E4A00956E98 /* Lore GeneratorUITests */,
+				FA1347A82E0E5E4700956E98 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA1347A82E0E5E4700956E98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA1347A72E0E5E4700956E98 /* Lore Generator.app */,
+				FA1347B92E0E5E4A00956E98 /* Lore GeneratorTests.xctest */,
+				FA1347C32E0E5E4A00956E98 /* Lore GeneratorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA1347A62E0E5E4700956E98 /* Lore Generator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA1347CD2E0E5E4A00956E98 /* Build configuration list for PBXNativeTarget "Lore Generator" */;
+			buildPhases = (
+				FA1347A32E0E5E4700956E98 /* Sources */,
+				FA1347A42E0E5E4700956E98 /* Frameworks */,
+				FA1347A52E0E5E4700956E98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				FA1347A92E0E5E4700956E98 /* Lore Generator */,
+			);
+			name = "Lore Generator";
+			packageProductDependencies = (
+			);
+			productName = "Lore Generator";
+			productReference = FA1347A72E0E5E4700956E98 /* Lore Generator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA1347B82E0E5E4A00956E98 /* Lore GeneratorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA1347D02E0E5E4A00956E98 /* Build configuration list for PBXNativeTarget "Lore GeneratorTests" */;
+			buildPhases = (
+				FA1347B52E0E5E4A00956E98 /* Sources */,
+				FA1347B62E0E5E4A00956E98 /* Frameworks */,
+				FA1347B72E0E5E4A00956E98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA1347BB2E0E5E4A00956E98 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FA1347BC2E0E5E4A00956E98 /* Lore GeneratorTests */,
+			);
+			name = "Lore GeneratorTests";
+			packageProductDependencies = (
+			);
+			productName = "Lore GeneratorTests";
+			productReference = FA1347B92E0E5E4A00956E98 /* Lore GeneratorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA1347C22E0E5E4A00956E98 /* Lore GeneratorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA1347D32E0E5E4A00956E98 /* Build configuration list for PBXNativeTarget "Lore GeneratorUITests" */;
+			buildPhases = (
+				FA1347BF2E0E5E4A00956E98 /* Sources */,
+				FA1347C02E0E5E4A00956E98 /* Frameworks */,
+				FA1347C12E0E5E4A00956E98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA1347C52E0E5E4A00956E98 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FA1347C62E0E5E4A00956E98 /* Lore GeneratorUITests */,
+			);
+			name = "Lore GeneratorUITests";
+			packageProductDependencies = (
+			);
+			productName = "Lore GeneratorUITests";
+			productReference = FA1347C32E0E5E4A00956E98 /* Lore GeneratorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA13479F2E0E5E4700956E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					FA1347A62E0E5E4700956E98 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					FA1347B82E0E5E4A00956E98 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = FA1347A62E0E5E4700956E98;
+					};
+					FA1347C22E0E5E4A00956E98 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = FA1347A62E0E5E4700956E98;
+					};
+				};
+			};
+			buildConfigurationList = FA1347A22E0E5E4700956E98 /* Build configuration list for PBXProject "Lore Generator" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA13479E2E0E5E4700956E98;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = FA1347A82E0E5E4700956E98 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA1347A62E0E5E4700956E98 /* Lore Generator */,
+				FA1347B82E0E5E4A00956E98 /* Lore GeneratorTests */,
+				FA1347C22E0E5E4A00956E98 /* Lore GeneratorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA1347A52E0E5E4700956E98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA1347B72E0E5E4A00956E98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA1347C12E0E5E4A00956E98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA1347A32E0E5E4700956E98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA1347B52E0E5E4A00956E98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA1347BF2E0E5E4A00956E98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA1347BB2E0E5E4A00956E98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA1347A62E0E5E4700956E98 /* Lore Generator */;
+			targetProxy = FA1347BA2E0E5E4A00956E98 /* PBXContainerItemProxy */;
+		};
+		FA1347C52E0E5E4A00956E98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA1347A62E0E5E4700956E98 /* Lore Generator */;
+			targetProxy = FA1347C42E0E5E4A00956E98 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FA1347CB2E0E5E4A00956E98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 7664Z8D7V3;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA1347CC2E0E5E4A00956E98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 7664Z8D7V3;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA1347CE2E0E5E4A00956E98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7664Z8D7V3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Lore-Generator-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses your camera to take photos of objects for lore generation.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app uses your photo library to analyze objects and generate lore.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alex.qwenlocalchat.Lore-Generator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA1347CF2E0E5E4A00956E98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7664Z8D7V3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Lore-Generator-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses your camera to take photos of objects for lore generation.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app uses your photo library to analyze objects and generate lore.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alex.qwenlocalchat.Lore-Generator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FA1347D12E0E5E4A00956E98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7664Z8D7V3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alex.qwenlocalchat.Lore-GeneratorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lore Generator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Lore Generator";
+			};
+			name = Debug;
+		};
+		FA1347D22E0E5E4A00956E98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7664Z8D7V3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alex.qwenlocalchat.Lore-GeneratorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lore Generator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Lore Generator";
+			};
+			name = Release;
+		};
+		FA1347D42E0E5E4A00956E98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7664Z8D7V3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alex.qwenlocalchat.Lore-GeneratorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Lore Generator";
+			};
+			name = Debug;
+		};
+		FA1347D52E0E5E4A00956E98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7664Z8D7V3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alex.qwenlocalchat.Lore-GeneratorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Lore Generator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA1347A22E0E5E4700956E98 /* Build configuration list for PBXProject "Lore Generator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA1347CB2E0E5E4A00956E98 /* Debug */,
+				FA1347CC2E0E5E4A00956E98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA1347CD2E0E5E4A00956E98 /* Build configuration list for PBXNativeTarget "Lore Generator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA1347CE2E0E5E4A00956E98 /* Debug */,
+				FA1347CF2E0E5E4A00956E98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA1347D02E0E5E4A00956E98 /* Build configuration list for PBXNativeTarget "Lore GeneratorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA1347D12E0E5E4A00956E98 /* Debug */,
+				FA1347D22E0E5E4A00956E98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA1347D32E0E5E4A00956E98 /* Build configuration list for PBXNativeTarget "Lore GeneratorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA1347D42E0E5E4A00956E98 /* Debug */,
+				FA1347D52E0E5E4A00956E98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA13479F2E0E5E4700956E98 /* Project object */;
+}
